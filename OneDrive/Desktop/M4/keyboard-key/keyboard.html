@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+ body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f9f9f9;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+h1 span {
+  color: #4caf50;
+  font-size: 2.5rem;
+}
+
+.key-code {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border: 2px solid #4caf50;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.key-code span {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #4caf50;
+}
+
+    </style>
+    <title>Generating Keyborad Keys</title>
+</head>
+<body>
+   <div class="container">
+    <h1 id="instruction">Press any keyboard key</h1>
+    <div class="key-code" style="display: none;">
+      <span id="key-code"></span>
+    </div>
+  </div>
+      <script src="keyboard.js"></script>
+</body>
+</html>
